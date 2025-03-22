@@ -20,7 +20,6 @@ cursor.execute("CREATE TABLE IF NOT EXISTS UserList (id INT AUTO_INCREMENT PRIMA
 @app.route('/', methods = ["POST", "GET"])
 def login():
     if request.method == "POST":
-        print("AW3453")
         # check if user has the given password
         username = request.form.get("username")
         password = request.form.get("password")
