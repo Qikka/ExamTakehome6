@@ -159,8 +159,7 @@ def register():
                 </body>
                 </html>
                 """, message=message)
-                
-        # check if user already exists, and fail in that case, showing Warning message
+
         sql = "INSERT INTO UserList (username, password) VALUES (%s, %s)"
         values = [username, password]
         cursor.execute(sql, values)
