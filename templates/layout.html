@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+    <title>User List</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <a href="/">
+                        {% if user !='' %}
+                        {{user}}'s User List
+                        {% else %}
+                        User List
+                        {% endif %}
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="content-section">
+
+            {% block content %}{% endblock %}
+
+        </div>
+    </div>
+
+</body>
+</html>
